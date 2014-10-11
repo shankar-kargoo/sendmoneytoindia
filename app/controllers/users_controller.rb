@@ -10,10 +10,11 @@ class UsersController < ApplicationController
     if @user.save
       session[:user_id] = @user.id
       flash[:notice] = "Thank you for signing up, we will send you updates every second friday."
-      redirect_to root_path
+      redirect_to  :back 
+
     else
       flash[:error] = " Sorry something went wrong, please try again!"
-      render :new
+      redirect_to  :back
     end
   end
 
