@@ -156,7 +156,6 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   mechanize
-  nokogiri
   pg
   pry
   quiet_assets
