@@ -6,10 +6,10 @@ namespace :fetch_rti do
 	require 'open-uri'
 
 	task fetch_rti_rates: :environment do
-		url = "http://exchangerates.remit2india.com/US_Offer_2014/index.asp?keyw=%2Bremittance%20%2Bto%20%2Bindia&gclid=CM-X54KUpsECFROTfgodSy8Ahg#."
+		url = "https://www.remit2india.com/sendmoneytoindia/UnitedStates/index.jsp"
 		doc = Nokogiri::HTML(open(url))
-		result =  doc.at_css(".exchange-rates-red").text
-		rate = result[9, 5].to_f
+		result =  doc.at_css(".exRate").text.to_s
+		rate = result.to_f
 		FxRti.create!(:rate => rate)
 	end
 

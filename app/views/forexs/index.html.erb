@@ -20,17 +20,18 @@
 
 			  <div class="col-sm-6 col-md-3">
 			    <div class="thumbnail">
-						<%= link_to image_tag("xoom.jpeg"),  "https://www.xoom.com", alt:'Xoom Logo', :target => "_blank" %>
+						<%= link_to image_tag("xoom.jpeg"),  "http://refer.xoom.com/a/clk/2DqCfL", alt:'Xoom Logo', :target => "_blank" %>
 			      <div class="text-center caption">
  			        <h2> $1 = <%= number_to_currency(@xoom, :unit => "Rs ", :precision => 2) %></h2>
-			        	Updated at <%= @xoom_time %> PST
+			        	Updated at <%= @xoom_time %> PST <br>
+			        	<%= link_to "Get $25 GiftCard",  "http://refer.xoom.com/a/clk/2DqCfL", :target => "_blank" %>
 			      </div>
 			    </div>
 			  </div>
 
 			  <div class="col-sm-6 col-md-3">
 			    <div class="thumbnail">
-			      <%= link_to image_tag("remit2india.jpeg"),  "http://www.remit2india.com", alt:'Remit to India Logo', :target => "_blank"  %>
+			      <%= link_to image_tag("remit2india.jpeg"),  "https://www.remit2india.com/sendmoneytoindia/morLandingRef.jsp?loginId=shnarayan@paypal.com", alt:'Remit to India Logo', :target => "_blank"  %>
 			      <div class="text-center caption">
  			        <h2> $1 = <%= number_to_currency(@rti, :unit => "Rs ", :precision => 2) %></h2>
  			        Updated at <%= @rti_time %> PST
@@ -111,8 +112,8 @@
 	<div id="footer">
 		<div class="container text-center"
 			<p class="muted credit">
-		    || Disclamer: This site has no affiliation with any money service provider. ||<br>
-		    for enquiries contact: shankar@kargoo.com
+		    || for enquiries contact: shankar@kargoo.com ||<br>
+
 	  	</p>
   	</div>
   </div>
