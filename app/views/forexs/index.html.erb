@@ -23,7 +23,7 @@
 						<%= link_to image_tag("xoom.jpeg"),  "https://www.xoom.com", alt:'Xoom Logo', :target => "_blank" %>
 			      <div class="text-center caption">
  			        <h2> $1 = <%= number_to_currency(@xoom, :unit => "Rs ", :precision => 2) %></h2>
-			        	Last updated on <%= @xoom_time %> 
+			        	Updated at <%= @xoom_time %> PST
 			      </div>
 			    </div>
 			  </div>
@@ -33,7 +33,7 @@
 			      <%= link_to image_tag("remit2india.jpeg"),  "http://www.remit2india.com", alt:'Remit to India Logo', :target => "_blank"  %>
 			      <div class="text-center caption">
  			        <h2> $1 = <%= number_to_currency(@rti, :unit => "Rs ", :precision => 2) %></h2>
- 			        Last updated on <%= @rti_time %> 
+ 			        Updated at <%= @rti_time %> PST
 			      </div>
 			    </div>
 			  </div>
@@ -43,7 +43,7 @@
  			      <%= link_to image_tag("westernunion.png"),  "https://www.westernunion.com/us/en/send-money-to-india.html", alt:'Western Union Logo', :target => "_blank"  %>
 			      <div class="text-center caption">
 			        <h2> $1 = <%= number_to_currency(@wu, :unit => "Rs ") %></h2>
-			        Last updated on <%= @wu_time %> 
+			        Updated at <%= @wu_time %> PST
 			      </div>
 			    </div>
 			  </div>
@@ -53,7 +53,7 @@
 			      <%= link_to image_tag("google.jpeg"),  "https://www.google.com/finance?q=USDINR", alt:'Google Logo', :target => "_blank"  %>
 			      <div class="text-center caption">
 			        <h2> $1 = <%= number_to_currency(@google, :unit => "Rs ") %></h2>
-			        Last updated on <%= @google_time %> 
+			        Updated at <%= @google_time %> PST
 			      </div>
 			    </div>
 			  </div>
@@ -64,7 +64,7 @@
 			      <%= link_to image_tag("icici.jpeg"),  "http://www.icicibank.com/nri-banking/money_transfer/money2india.page", alt:'Icici Remitance for NRI', :target => "_blank"  %>
 			      <div class="text-center caption">
 			        <h2> $1 = <%= number_to_currency(@icici, :unit => "Rs ") %></h2>
-			        Last updated on <%= @icici_time %> 
+			        Updated at <%= @icici_time %> PST
 			      </div>
 			    </div>
 			  </div>
@@ -74,7 +74,7 @@
 			      <%= link_to image_tag("hdfc.jpeg"),  "http://www.hdfcbank.com/nri_banking/money_transfer/default.htm", alt:'HDFC Remitance for NRI', :target => "_blank"  %>
 			      <div class="text-center caption">
 			        <h2> $1 = <%= number_to_currency(@hdfc, :unit => "Rs ") %></h2>
-			        Last updated on <%= @hdfc_time %> 
+			        Updated at <%= @hdfc_time %> PST
 			      </div>
 			    </div>
 			  </div>
@@ -84,7 +84,7 @@
 			      <%= link_to image_tag("sbi.jpeg"),  "http://www.sbical.com/", alt:'SBI Remitance for NRI', :target => "_blank"  %>
 			      <div class="text-center caption">
 			        <h2> $1 = <%= number_to_currency(@sbi, :unit => "Rs ") %></h2>
-			        Last updated on <%= @sbi_time %> 
+			        Updated at <%= @sbi_time %> PST
 			      </div>
 			    </div>
 			  </div>
@@ -94,7 +94,7 @@
 			      <%= link_to image_tag("bloomberg.jpeg"),  "http://www.bloomberg.com/quote/USDINR:CUR", alt:'Bloomberg USD to INR conversion rate', :target => "_blank"  %>
 			      <div class="text-center caption">
 			        <h2> $1 = <%= number_to_currency(@bloomberg, :unit => "Rs ") %></h2>
-			        Last updated on <%= @bloomberg_time %> 
+			        Updated at <%= @bloomberg_time %> PST
 			      </div>
 			    </div>
 			  </div>
