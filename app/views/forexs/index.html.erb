@@ -12,22 +12,17 @@
 		  <h1>Send Money to India. <small> Get the best forex rate!</small></h1>
 		</div>
 
-		<p class="lead text-center">Consolidated view of today's forex rates, so that you can make the best decision.</p>
+		<p class="lead text-center">Rate's from top reimttance providers. Click logo to send money.</p>
 		
 		<div class="jumbotron">
-
-			<p> Rate's from top reimttance providers.</p>
-			<br>
 
 			<div class="row">
 
 			  <div class="col-sm-6 col-md-3">
 			    <div class="thumbnail">
-						<%= link_to image_tag("xoom.png"),  "https://www.xoom.com", alt:'Xoom Logo' %>
+						<%= link_to image_tag("xoom.jpeg"),  "https://www.xoom.com", alt:'Xoom Logo', :target => "_blank" %>
 			      <div class="text-center caption">
-			        <h3>Xoom</h3>
-			        <p> Today's rate </p>
-			        <h2> $1 = <%= number_to_currency(@xoom, :precision => 2, :unit => "Rs ") %></h2>
+ 			        <h2> $1 = <%= number_to_currency(@xoom, :unit => "Rs ", :precision => 2) %></h2>
 			        	Last updated on <%= @xoom_time %> 
 			      </div>
 			    </div>
@@ -35,10 +30,8 @@
 
 			  <div class="col-sm-6 col-md-3">
 			    <div class="thumbnail">
-			      <%= link_to image_tag("remit2india.jpeg"),  "http://www.remit2india.com", alt:'Remit to India Logo' %>
+			      <%= link_to image_tag("remit2india.jpeg"),  "http://www.remit2india.com", alt:'Remit to India Logo', :target => "_blank"  %>
 			      <div class="text-center caption">
-			        <h3>Remit 2 India</h3>
-			        <p> Today's rate  </p>
  			        <h2> $1 = <%= number_to_currency(@rti, :unit => "Rs ", :precision => 2) %></h2>
  			        Last updated on <%= @rti_time %> 
 			      </div>
@@ -47,10 +40,8 @@
 
 			  <div class="col-sm-6 col-md-3">
 			    <div class="thumbnail">
- 			      <%= link_to image_tag("westernunion.png"),  "http://www.westernunion.com", alt:'Western Union Logo' %>
+ 			      <%= link_to image_tag("westernunion.png"),  "https://www.westernunion.com/us/en/send-money-to-india.html", alt:'Western Union Logo', :target => "_blank"  %>
 			      <div class="text-center caption">
-			        <h3>Western Union</h3>
-			        <p> Today's rate  </p>
 			        <h2> $1 = <%= number_to_currency(@wu, :unit => "Rs ") %></h2>
 			        Last updated on <%= @wu_time %> 
 			      </div>
@@ -59,15 +50,55 @@
 
 			  <div class="col-sm-6 col-md-3">
 			    <div class="thumbnail">
-			      <%= link_to image_tag("google.jpeg"),  "http://www.google.com", alt:'Google Logo' %>
+			      <%= link_to image_tag("google.jpeg"),  "https://www.google.com/finance?q=USDINR", alt:'Google Logo', :target => "_blank"  %>
 			      <div class="text-center caption">
-			        <h3>Google</h3>
-			        <p> Today's rate  </p>
 			        <h2> $1 = <%= number_to_currency(@google, :unit => "Rs ") %></h2>
 			        Last updated on <%= @google_time %> 
 			      </div>
 			    </div>
 			  </div>
+
+
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <%= link_to image_tag("icici.jpeg"),  "http://www.icicibank.com/nri-banking/money_transfer/money2india.page", alt:'Icici Remitance for NRI', :target => "_blank"  %>
+			      <div class="text-center caption">
+			        <h2> $1 = <%= number_to_currency(@icici, :unit => "Rs ") %></h2>
+			        Last updated on <%= @icici_time %> 
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <%= link_to image_tag("hdfc.jpeg"),  "http://www.hdfcbank.com/nri_banking/money_transfer/default.htm", alt:'HDFC Remitance for NRI', :target => "_blank"  %>
+			      <div class="text-center caption">
+			        <h2> $1 = <%= number_to_currency(@hdfc, :unit => "Rs ") %></h2>
+			        Last updated on <%= @hdfc_time %> 
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <%= link_to image_tag("sbi.jpeg"),  "http://www.sbical.com/", alt:'SBI Remitance for NRI', :target => "_blank"  %>
+			      <div class="text-center caption">
+			        <h2> $1 = <%= number_to_currency(@sbi, :unit => "Rs ") %></h2>
+			        Last updated on <%= @sbi_time %> 
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="col-sm-6 col-md-3">
+			    <div class="thumbnail">
+			      <%= link_to image_tag("bloomberg.jpeg"),  "http://www.bloomberg.com/quote/USDINR:CUR", alt:'Bloomberg USD to INR conversion rate', :target => "_blank"  %>
+			      <div class="text-center caption">
+			        <h2> $1 = <%= number_to_currency(@bloomberg, :unit => "Rs ") %></h2>
+			        Last updated on <%= @bloomberg_time %> 
+			      </div>
+			    </div>
+			  </div>
+
 
 			</div>
 		</div>
@@ -80,8 +111,8 @@
 	<div id="footer">
 		<div class="container text-center"
 			<p class="muted credit">
-		    || Disclamer: This site has no affiliation with any money service provider, and does not assume any responsibility for funds transfer. ||<br>
-		    shankar@kargoo.com
+		    || Disclamer: This site has no affiliation with any money service provider. ||<br>
+		    for enquiries contact: shankar@kargoo.com
 	  	</p>
   	</div>
   </div>

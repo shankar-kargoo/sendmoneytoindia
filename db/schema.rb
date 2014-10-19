@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141011091757) do
+ActiveRecord::Schema.define(version: 20141019072137) do
+
+  create_table "fx_bloombergs", force: true do |t|
+    t.float    "rate"
+    t.string   "comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "fx_googles", force: true do |t|
     t.string   "comment"
@@ -20,7 +27,28 @@ ActiveRecord::Schema.define(version: 20141011091757) do
     t.float    "rate"
   end
 
+  create_table "fx_hdfcs", force: true do |t|
+    t.float    "rate"
+    t.string   "comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "fx_icicis", force: true do |t|
+    t.float    "rate"
+    t.string   "comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "fx_rtis", force: true do |t|
+    t.string   "comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.float    "rate"
+  end
+
+  create_table "fx_sbis", force: true do |t|
     t.string   "comment"
     t.datetime "created_at"
     t.datetime "updated_at"

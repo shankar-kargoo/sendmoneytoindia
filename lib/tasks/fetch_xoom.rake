@@ -12,5 +12,6 @@ namespace :fetch_xoom do
 		rate = result[8, 7].to_f
 		FxXoom.create!(:rate => rate)
 	end
-
 end
+
+
